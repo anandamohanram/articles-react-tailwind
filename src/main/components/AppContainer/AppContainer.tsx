@@ -10,7 +10,10 @@ import { Content, Header } from "main/components";
  */
 export const AppContainer = () => {
   return (
-    <div className="grid grid-cols-1 container m-auto p-10 xl:px-60">
+    <div
+      className="grid grid-cols-1 container m-auto p-10 xl:px-60"
+      style={{ minWidth: "320px" }}
+    >
       <Header />
       <Content />
     </div>
