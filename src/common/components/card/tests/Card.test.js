@@ -10,12 +10,12 @@ import * as UtilsModule from '../utils';
 // constants
 const onClick = jest.fn();
 jest.mock('../utils');
-const card = render(<Card date="date" heading="heading" content="content" readMoreLink="link" />);
 
 // tests
 describe('Card', () => {
     
     it('Shows the card contents', () => {
+        render(<Card date="date" heading="heading" content="content" readMoreLink="link" />);
         expect(screen.getByText('date')).toBeInTheDocument();
         expect(screen.getByText('content')).toBeInTheDocument();
         expect(screen.getByText('heading')).toBeInTheDocument();
@@ -23,8 +23,8 @@ describe('Card', () => {
       });
 
       it('Calls the getOnClickHandler function when clicked', () => {
-        const button = render(<Card id="button" text="Click" onClick={onClick} />);
-        const {getByTestId} = button;
+        const card = render(<Card id="button" text="Click" onClick={onClick} />);
+        const {getByTestId} = card;
         fireEvent.click(getByTestId('button'))
         expect(UtilsModule.getOnClickHandler).toBeCalled();
       });

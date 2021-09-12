@@ -11,6 +11,6 @@ import type { PropsWithChildren } from "react";
  */
 export const BodyParagraphText = ({
   children,
-}: PropsWithChildren<null>): React.ReactElement => {
+}: PropsWithChildren<any>): React.ReactElement => {
   return <div className="font-normal font-sans text-base py-4">{children}</div>;
 };
