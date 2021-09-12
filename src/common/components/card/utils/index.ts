@@ -1,0 +1,1 @@
+export { getOnClickHandler } from "./getOnClickHandler"

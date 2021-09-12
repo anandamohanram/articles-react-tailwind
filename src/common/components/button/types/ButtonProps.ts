@@ -1,4 +1,4 @@
 export type ButtonProps = {
     text: string;
-    onClick?: React.MouseEventHandler;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
