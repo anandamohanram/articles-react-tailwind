@@ -1,6 +1,7 @@
-//
-import { Content, Header } from "main/components";
+// imports
 import React from "react";
+
+import { Content, Header } from "main/components";
 
 /**
  * AppContainer - main wrapper of the app

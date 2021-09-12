@@ -1,0 +1,1 @@
+export { setMyFetch } from "./setMyFetch"
